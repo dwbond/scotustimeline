@@ -40,6 +40,8 @@ class Justice(Base):
         return ('justice', None, {'slug':self.slug})
 
 class Case(Base):
+    """The case.
+    """
 #    handed_down = models.DateField()
 #    citations = models.IntegerField()
     category = models.ManyToManyField(Category)
