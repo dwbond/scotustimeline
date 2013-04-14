@@ -4,23 +4,23 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns('timeline.views',
     # Examples:
     # url(r'^$', 'scotustimeline.views.home', name='home'),
     # url(r'^scotustimeline/', include('scotustimeline.foo.urls')),
 
     # homepage
-    (r'^$', 'timeline.views.index',),
+    url(r'^$', 'index', name = 'home'),
 
-    url(r'^category-list/', 'timeline.views.category_list', name = 'category_list'),
+    url(r'^category-list/', 'category_list', name = 'category_list'),
 
     # url('r^category/'
 
-    url(r'^justice-list/', 'timeline.views.justice_list', name = 'justice_list'),
+    url(r'^justice-list/', 'justice_list', name = 'justice_list'),
 
     # url('r^justice/'
 
-    url(r'^case-list/', 'timeline.views.case_list', name = 'case_list'),
+    url(r'^case-list/', 'timeline.views.lase_list', name = 'case_list'),
 
     # url('r^case/'
 

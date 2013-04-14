@@ -5,7 +5,7 @@ SCOTUS Timeline
 {% endblock %}
 
 {% block sidebar %}
-<a href="category">Categories</a>
-<a href="justice">Justices</a>
-<a href="case_list">Cases</a>
+<a href="{% url category_list %}">Categories</a>
+<a href="{% url justice_list %}">Justices</a>
+<a href="{% url case_list %}">Cases</a>
 {% endblock %}

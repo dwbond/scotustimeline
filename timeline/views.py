@@ -2,13 +2,13 @@
 
 from django.shortcuts import render_to_response, get_object_or_404
 from timeline.models import *
-from django.template import RequestContext
 from random import randint
 
 cases = Case.objects.all()
 
 # though named for "cases", all of these functions will work just as well with justices
 
+"""
 def caseNumber(cases):
     # return the number of cases
 
@@ -36,13 +36,11 @@ def timelineChange(begin, end):
 
 # THERE'S PROBABLY GOING TO HAVE TO BE A NEW PAGE RENDERED
 # SINCE I AIN'T MESSING WITH NO JAVASCRIPT OR AJAX SHIT
-
+"""
 def index(request):
 
     return render_to_response('timeline.html', {
-        'cases' : cases,
     },
-    context_instance = RequestContext(request),
     )
 
 def justice_list(request):

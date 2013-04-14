@@ -9,8 +9,7 @@ List of Justices
 {% endblock %}
 
 {% block sidebar %}
-<a href="http://www.scotustimeline.com/">Home</a>
-<a href="category_list">Categories</a>
-<a href="case_list">Cases</a>
-<!-- <a href="home.html">Home</a> -->
+<a href="{% url home %}">Home</a>
+<a href="{% url category_list %}">Categories</a>
+<a href="{% url case_list %}">Cases</a>
 {% endblock %}
