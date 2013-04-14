@@ -9,17 +9,17 @@
     <body>
 <h1><a href="{% url home %}">Supreme Court of the United States Timeline</a></h1>
     
-    <!-- Page Title -->
-    <h2>
-    {% block title %}
-    {% endblock %}
-    </h2>
-
     <!-- links to other parts of the site -->
     <h4>
     {% block sidebar %}
     {% endblock %}
     </h4>
+   
+    <!-- Page Title -->
+    <h2>
+    {% block title %}
+    {% endblock %}
+    </h2>
 
     <!-- Page Content -->
     {% block content %}

@@ -13,3 +13,15 @@ List of Justices
 <a href="{% url category_list %}">Categories</a>
 <a href="{% url case_list %}">Cases</a>
 {% endblock %}
+
+{% block content %}
+    {% if justices %}
+        <ul>
+        {% for justice in justices %}
+            <li>{{ justice.name }}</li>
+        {% endfor %}
+        </ul>
+        {% else %}
+            There are no Justices.
+        {% endif %}
+{% endblock %}
