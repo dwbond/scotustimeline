@@ -3,23 +3,34 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from timeline.models import *
 from django.template import RequestContext
+from random import randint
 
 cases = Case.objects.all()
 
-def timespan(start, end):
-    # expects dates
-    interval = end - start
-    divided = interval / 6
-    interval_list = [start]
+def caseNumber(cases):
+    # return the number of cases
 
-    subdivision = 6
-    newtime = start
-    while subdivision < 6:
-        interval_list.append(newtime + divided)
-        newtime = newtime + divided
-        subdivision = subdivision - 1
-       
-    return interval_list
+def caseList(cases, totalCases):
+    caseList = []
+    if totalCases >= 10:
+        for i in range(10):
+            # get a random number in the range of the number of cases
+            # append that case to caseList
+            # return caseList
+    else:
+        for i in range(totalCases - 1):
+            # do the same thing
+
+# for the front page, cases will be Case.objects.all() and caseNumber will be the length of all the cases
+
+def timelineChange(begin, end):
+    # the user enters a start date and an end date
+    # return a list of all the cases in that time range
+    
+    # try, catch, if len(list) == 1
+    # pop up an error
+
+# that new list will be passed to caseList, and ten random ones in he specified section of time will be returned
 
 def index(request):
 
