@@ -20,7 +20,7 @@ urlpatterns = patterns('timeline.views',
 
     # url('r^justice/'
 
-    url(r'^case-list/', 'timeline.views.lase_list', name = 'case_list'),
+    url(r'^case-list/', 'case_list', name = 'case_list'),
 
     # url('r^case/'
 
