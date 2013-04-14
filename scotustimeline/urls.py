@@ -10,17 +10,17 @@ urlpatterns = patterns('',
     # url(r'^scotustimeline/', include('scotustimeline.foo.urls')),
 
     # homepage
-    (r'^$', 'timeline.views.index', name = 'home'),
+    (r'^$', 'timeline.views.index',),
 
-    url(r'^category-list/(?P<slug>[^\.]+)', 'timeline.views.category', name = 'category_list'),
+    url(r'^category-list/', 'timeline.views.category_list', name = 'category_list'),
 
     # url('r^category/'
 
-    url('r^justice-list/(?P<slug>[^\.]+)', 'timeline.views.justice', name = 'justice_list'),
+    url(r'^justice-list/', 'timeline.views.justice_list', name = 'justice_list'),
 
     # url('r^justice/'
 
-    url('r^case-list/(?P<slug>[^\.]+)', 'timeline.views.justice', name = 'case_list'),
+    url(r'^case-list/', 'timeline.views.case_list', name = 'case_list'),
 
     # url('r^case/'
 
