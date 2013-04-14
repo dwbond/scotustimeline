@@ -43,6 +43,8 @@ def index(request):
 
 def justice_list(request):
 
+    justices = Justice.objects.all()
+
     return render_to_response('justice_list.html', {
     },
     )
@@ -54,6 +56,8 @@ def justice_list(request):
 #    )
 
 def category_list(request):
+
+    categories = Category.objects.all()
 
     return render_to_response('category_list.html', {
     },
