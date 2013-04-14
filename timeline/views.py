@@ -1,10 +1,10 @@
 # Create your views here.
 
 from django.shortcuts import render_to_response, get_object_or_404
-from blog.models import *
+from timeline.models import *
 from django.template import RequestContext
 
-cases = Cases.objects.all()
+cases = Case.objects.all()
 
 def timespan(start, end):
     # expects dates

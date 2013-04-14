@@ -2,12 +2,26 @@ Supreme Court of the United States Timeline
 
 Renders a timeline of the Supreme Court's decisions.
 
-Work items:
+Starting over with what I want this to look like.
 
-Wrote method to return list of time intervals. Now need to query database for the cases from the time periods in the list, and then to pull the two highest ranked cases from the cases for the set time period.
+A bar across the linking to other sections of the site.
 
-These two cases then need to be displayed on timeline.html, which serves as the home page for the site, one below, one above. This will require Bootstrap. Each case takes up two grid sections on the Bootstrap scaffold.
+The homepage will have two fields at the top, one for a start date, and one for an end date. (F: a series of labels that can be marked for sorting, and a number of other filtering features)
 
-The next step will be to introduce fields for users to modify the scale of the timeline. These changes need to be passed back to timespan to determine the new intervals, and the page will have to be reloaded with the new timeline. Hopefully there will eventually be a way to do that on the page without refreshing it, but I don't plan to do that anytime soon.
+When the user puts in the two dates, twelve cases will be displayed by default (F: customizable), six on each side of a line that cuts vertically down the page, evenly divided along the time interval specified by the user.
 
-After this, I can start to implement some of the other fields of Case, which will lay the foundation for filtering the timeline based on customized user queries.
+(F: Ajax for changing the timeline?)
+
+Pages for each page
+
+Pages for each Justice
+
+Pages for each year
+
+Pages for each category
+
+Data visualizations for sway of the court's ideology, etc
+
+Stealing all the things from Cornell with webscraping and analyzing citations for a ranking on the timeline
+
+Aaaand... that's how far I want to get right now.
