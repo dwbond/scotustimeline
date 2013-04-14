@@ -45,38 +45,38 @@ def index(request):
     context_instance = RequestContext(request),
     )
 
-#def justice_list(request):
-#
-#    return render_to_response('justice_list.html', {
-#    },
-#    )
+def justice_list(request):
 
-def justice(request, slug):
-
-    return render_to_response('justice.html', {
+    return render_to_response('justice_list.html', {
     },
     )
 
-#def category_list(request):
-#
-#    return render_to_response('category_list.html', {
+#def justice(request, slug):
+
+#    return render_to_response('justice.html', {
 #    },
 #    )
 
-def category(request, slug):
+def category_list(request):
 
-    return render_to_response('category.html', {
+    return render_to_response('category_list.html', {
     },
     )
 
-def case(request, slug):
+#def category(request, slug):
 
-    return render_to_response('case.html', {
-    },
-    )
-
-#def case_list(request):
-#
-#    return render_to_response('case_list.html', {
+#    return render_to_response('category.html', {
 #    },
 #    )
+
+#def case(request, slug):
+
+#    return render_to_response('case.html', {
+#    },
+#    )
+
+def case_list(request):
+
+    return render_to_response('case_list.html', {
+    },
+    )

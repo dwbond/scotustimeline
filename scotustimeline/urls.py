@@ -10,19 +10,19 @@ urlpatterns = patterns('',
     # url(r'^scotustimeline/', include('scotustimeline.foo.urls')),
 
     # homepage
-    (r'^$', 'timeline.views.index',),
+    (r'^$', 'timeline.views.index', name = 'home'),
 
-    url(r'^category/(?P<slug>[^\.]+)', 'timeline.views.category', name = 'category'),
+    url(r'^category-list/(?P<slug>[^\.]+)', 'timeline.views.category', name = 'category_list'),
 
-    # url('r^category-list/'
+    # url('r^category/'
 
-    url('r^justice/(?P<slug>[^\.]+)', 'timeline.views.justice', name = 'justice'),
+    url('r^justice-list/(?P<slug>[^\.]+)', 'timeline.views.justice', name = 'justice_list'),
 
-    # url('r^justice-list/'
+    # url('r^justice/'
 
-    url('r^case/(?P<slug>[^\.]+)', 'timeline.views.justice', name = 'case_list'),
+    url('r^case-list/(?P<slug>[^\.]+)', 'timeline.views.justice', name = 'case_list'),
 
-    # url('r^case-list/'
+    # url('r^case/'
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
