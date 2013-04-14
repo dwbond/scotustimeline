@@ -14,15 +14,15 @@ urlpatterns = patterns('',
 
     url(r'^category/(?P<slug>[^\.]+)', 'timeline.views.category', name = 'category'),
 
-#    url('r^category-list/'
+    # url('r^category-list/'
 
     url('r^justice/(?P<slug>[^\.]+)', 'timeline.views.justice', name = 'justice'),
 
-#    url('r^justice-list/'
+    # url('r^justice-list/'
 
-    url('r^case/(?P<slug>[^\.]+)', 'timeline.views.justice', name = 'case'),
+    url('r^case/(?P<slug>[^\.]+)', 'timeline.views.justice', name = 'case_list'),
 
-#    url('r^case-list/'
+    # url('r^case-list/'
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

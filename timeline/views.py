@@ -7,6 +7,8 @@ from random import randint
 
 cases = Case.objects.all()
 
+# though named for "cases", all of these functions will work just as well with justices
+
 def caseNumber(cases):
     # return the number of cases
 
@@ -31,6 +33,9 @@ def timelineChange(begin, end):
     # pop up an error
 
 # that new list will be passed to caseList, and ten random ones in he specified section of time will be returned
+
+# THERE'S PROBABLY GOING TO HAVE TO BE A NEW PAGE RENDERED
+# SINCE I AIN'T MESSING WITH NO JAVASCRIPT OR AJAX SHIT
 
 def index(request):
 
