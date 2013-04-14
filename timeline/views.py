@@ -4,13 +4,11 @@ from django.shortcuts import render_to_response, get_object_or_404
 from timeline.models import *
 from random import randint
 
-cases = Case.objects.all()
 
 # though named for "cases", all of these functions will work just as well with justices
-
 """
 def caseNumber(cases):
-    # return the number of cases
+    return cases.count()
 
 def caseList(cases, totalCases):
     caseList = []
@@ -74,6 +72,8 @@ def category_list(request):
 #    )
 
 def case_list(request):
+
+    cases = Case.objects.all()
 
     return render_to_response('case_list.html', {
     },
