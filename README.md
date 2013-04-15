@@ -1,5 +1,5 @@
 Supreme Court of the United States Timeline
-
+-------------------------------------------
 Renders a timeline of the Supreme Court's decisions.
 
 Starting over with what I want this to look like.
@@ -12,13 +12,12 @@ When the user puts in the two dates, twelve cases will be displayed by default (
 
 (F: Ajax for changing the timeline?)
 
-Pages for each page
+Have the pseudocode for the main function on the front page.
+1) Have ten random cases appear vertically stacked on the main timeline page. The ten random cases are put in sequential order by date.
+2) Have the spaces for the user to put in a date range, and have that modify the randomized database query.
+3) Have hidden options for other searches. Details to come.
 
-Pages for each Justice
-
-Pages for each year
-
-Pages for each category
+No CSS? This looks like shit!
 
 Data visualizations for sway of the court's ideology, etc
 
