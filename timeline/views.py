@@ -3,7 +3,7 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from timeline.models import *
 from random import randint
-
+from django.shortcuts import get_object_or_404
 
 # though named for "cases", all of these functions will work just as well with justices
 """
@@ -69,11 +69,12 @@ def category_list(request):
 #    },
 #    )
 
-#def case(request, slug):
+def case(request, slug):
 
-#    return render_to_response('case.html', {
-#    },
-#    )
+    return render_to_response('case.html', {
+        'case': get_object_or_404(Case, slug=slug),
+    },
+    )
 
 def case_list(request):
 
