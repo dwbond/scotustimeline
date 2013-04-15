@@ -7,3 +7,9 @@
 {% block title %}
 {{ justice.name }}
 {% endblock %}
+
+{% block content %}
+    {% justice.appointed_by %}
+    <br />
+    {% justice.description %}
+{% endblock %}
