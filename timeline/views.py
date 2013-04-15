@@ -40,7 +40,7 @@ def index(request):
     return render_to_response('timeline.html', {
     },
     )
-
+# # # # # # # # # # #
 def justice_list(request):
 
     justices = Justice.objects.all()
@@ -49,12 +49,13 @@ def justice_list(request):
     },
     )
 
-#def justice(request, slug):
+def justice(request, slug):
 
-#    return render_to_response('justice.html', {
-#    },
-#    )
-
+    return render_to_response('justice.html', {
+        'justice': get_object_or_404(Justice, slug=slug),
+    },
+    )
+# # # # # # # # # # #
 def category_list(request):
 
     categories = Category.objects.all()
@@ -63,12 +64,13 @@ def category_list(request):
     },
     )
 
-#def category(request, slug):
+def category(request, slug):
 
-#    return render_to_response('category.html', {
-#    },
-#    )
-
+    return render_to_response('category.html', {
+        'category': get_object_or_404(Category, slug=slug),
+    },
+    )
+# # # # # # # # # # #
 def case(request, slug):
 
     return render_to_response('case.html', {

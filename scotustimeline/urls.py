@@ -13,16 +13,13 @@ urlpatterns = patterns('timeline.views',
     url(r'^$', 'index', name = 'home'),
 
     url(r'^category-list/', 'category_list', name = 'category_list'),
-
-    # url('r^category/'
+    url('r^category/(?P<slug>[^\.]+)/', 'category', name = 'category'),
 
     url(r'^justice-list/', 'justice_list', name = 'justice_list'),
-
-    # url('r^justice/'
+    url('r^justice/', 'justice', name = 'justice'),
 
     url(r'^case-list/', 'case_list', name = 'case_list'),
-
-    # url('r^case/'
+    url('r^case/(?P<slug>[^\.]+)/', 'case', name = 'case'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
